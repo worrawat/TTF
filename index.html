@@ -89,17 +89,17 @@ title: Home
 			<div class="col-md-4 col-sm-6">
 				<div class="portfolio-item">
 					<div class="portfolio-image">
-						<a href="blogs/2015/JAN/runningworkshop.html"><img src="img/Photo Jan 11, 11 30 45 AM.jpg"></a>
+						<a href="{{ post.url }}">{{ post.excerpt }}</a>
 					</div>
 					<div class="portfolio-info">
 						<ul>
-							<li class="portfolio-project-name">Running Workshop</li>
-							<li class="read-more"><a href="blogs/2015/JAN/runningworkshop.html" class="btn">Read more</a></li>
+							<li class="portfolio-project-name">{{ post.title }}</li>
+							<li class="read-more"><a href="{{ post.url }}" class="btn">Read more</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			{% endfor %}			
+			{% endfor %}
 		</div>
 	</div>
 </div>
